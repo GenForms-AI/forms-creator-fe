@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+# AI-Powered Form Builder Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the frontend repository of the AI-Powered Form Builder! This project aims to provide a dynamic form-building experience similar to FormIO but with integrated AI capabilities. Users will be able to create forms through drag-and-drop, interact with AI chat for form suggestions, and upload files seamlessly.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Drag-and-Drop Form Builder**: Easily create complex forms with an intuitive interface.
+- **AI-Powered Assistance**: Use AI chat to generate form fields, validate inputs, and improve user experience.
+- **File Upload Support**: Allow users to upload and manage files within forms.
+- **Modern UI**: Built with **React**, **React Router Dom**, **TailwindCSS**, and **ShadCN components** for a sleek and responsive design.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend Framework**: React
+- **Routing**: React Router Dom
+- **Styling**: TailwindCSS
+- **UI Components**: ShadCN
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
+Make sure you have the following installed:
+- Node.js (LTS version recommended)
+- npm or yarn
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/GenForms-AI/forms-creator-fe
+   cd forms-creator-fe
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Contribution
+Contributions are welcome! Feel free to submit issues and pull requests to improve the project.
+
+## License
+This project is open-source and available under the MIT License.
+
+## Contact
+For questions or discussions, open an issue or reach out to the maintainers.
+
