@@ -1,11 +1,13 @@
-import { Button } from './components/ui/button'
+import { Route, Routes } from "react-router-dom";
+
+import FormBuilderPage from "./pages/FormBuilderPage";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<FormBuilderPage />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
